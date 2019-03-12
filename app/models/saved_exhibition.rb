@@ -1,0 +1,4 @@
+class SavedExhibition < ApplicationRecord
+  belongs_to :user
+  belongs_to :exhibition
+end

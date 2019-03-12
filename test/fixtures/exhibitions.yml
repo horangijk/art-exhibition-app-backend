@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  venue_name: MyString
+  venue_address: MyString
+  venue_phone: MyString
+  venue_access: MyString
+  venue_area: MyString
+  venue_openinghour: MyString
+  venue_closinghour: MyString
+  image: MyString
+  price: MyString
+  permanent_event: MyString
+  description: MyString
+  media: MyString
+  start_date: MyString
+  end_date: MyString
+  days_remaining: MyString
+
+two:
+  name: MyString
+  venue_name: MyString
+  venue_address: MyString
+  venue_phone: MyString
+  venue_access: MyString
+  venue_area: MyString
+  venue_openinghour: MyString
+  venue_closinghour: MyString
+  image: MyString
+  price: MyString
+  permanent_event: MyString
+  description: MyString
+  media: MyString
+  start_date: MyString
+  end_date: MyString
+  days_remaining: MyString
