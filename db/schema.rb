@@ -22,16 +22,16 @@ ActiveRecord::Schema.define(version: 2019_03_12_144910) do
     t.string "venue_phone"
     t.string "venue_access"
     t.string "venue_area"
-    t.string "venue_openinghour"
-    t.string "venue_closinghour"
+    t.integer "venue_openinghour"
+    t.integer "venue_closinghour"
     t.string "image"
     t.string "price"
-    t.string "permanent_event"
+    t.integer "permanent_event"
     t.string "description"
     t.string "media"
     t.string "start_date"
     t.string "end_date"
-    t.string "days_remaining"
+    t.integer "days_remaining"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
