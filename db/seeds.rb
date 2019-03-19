@@ -9,8 +9,16 @@
 require 'rest-client'
 require 'json'
 
-
+User.destroy_all
 Exhibition.destroy_all
+
+User.create(
+  full_name: "Jonathan Choi",
+  email: "jisung594@gmail.com",
+  home_neighborhood: "Queens",
+  password_digest: "$2a$10$WOMTVtXFt/b1D5wq82raiODjMNOnPbROTxWeuqdPzuO.f2PRbRhyO"
+)
+
 
 # for exhibitions in QUEENS
 raw_data1 = RestClient.get('http://www.nyartbeat.com/list/event_area_queens.en.xml?MaxResults="50"')
