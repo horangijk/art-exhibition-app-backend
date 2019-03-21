@@ -11,12 +11,18 @@ require 'json'
 
 User.destroy_all
 Exhibition.destroy_all
+SavedExhibition.destroy_all
 
 User.create(
   full_name: "Jonathan Choi",
   email: "jisung594@gmail.com",
   home_neighborhood: "Queens",
   password_digest: "$2a$10$WOMTVtXFt/b1D5wq82raiODjMNOnPbROTxWeuqdPzuO.f2PRbRhyO"
+)
+
+SavedExhibition.create(
+  user_id: 7,
+  exhibition_id: 1823
 )
 
 
