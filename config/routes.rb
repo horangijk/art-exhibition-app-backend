@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       resources :exhibitions, only: [:index, :show]
       resources :users, only: [:index, :create, :show]
       resources :saved_exhibitions
+      resources :impressions, only: [:index, :create, :show]
 
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'

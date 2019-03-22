@@ -12,6 +12,7 @@ require 'json'
 User.destroy_all
 Exhibition.destroy_all
 SavedExhibition.destroy_all
+Impression.destroy_all
 
 User.create(
   full_name: "Jonathan Choi",
@@ -20,18 +21,13 @@ User.create(
   password_digest: "$2a$10$WOMTVtXFt/b1D5wq82raiODjMNOnPbROTxWeuqdPzuO.f2PRbRhyO"
 )
 
-SavedExhibition.create(
-  user_id: 7,
-  exhibition_id: 1823
-)
-
 
 # for exhibitions in QUEENS
 raw_data1 = RestClient.get('http://www.nyartbeat.com/list/event_area_queens.en.xml?MaxResults="50"')
 parsed_data = Hash.from_xml(raw_data1)
 
 parsed_data["Events"]["Event"].each do |exhibition|
-  Exhibition.create(
+    Exhibition.create(
     name: exhibition["Name"],
     venue_name: exhibition["Venue"]["Name"],
     venue_address: exhibition["Venue"]["Address"],
