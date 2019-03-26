@@ -9,6 +9,7 @@ class Api::V1::ImpressionsController < ApplicationController
     render json: @impression
   end
 
+
   private
 
   def impression_params

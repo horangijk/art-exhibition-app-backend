@@ -16,8 +16,9 @@ Impression.destroy_all
 
 User.create(
   full_name: "Jonathan Choi",
+  occupation: "Graphic Designer/Illustrator",
   email: "jisung594@gmail.com",
-  home_neighborhood: "Queens",
+  home_neighborhood: "Astoria, Queens",
   password_digest: "$2a$10$WOMTVtXFt/b1D5wq82raiODjMNOnPbROTxWeuqdPzuO.f2PRbRhyO"
 )
 
