@@ -4,8 +4,19 @@ class Api::V1::SavedExhibitionsController < ApplicationController
     render json: @saved_exhibitions
   end
 
+  def show
+    @saved_exhibition = SavedExhibition.find(params[:id])
+    render json: @saved_exhibition
+  end
+
   def create
     @saved_exhibition = SavedExhibition.create(saved_exhibition_params)
+    render json: @saved_exhibition
+  end
+
+  def destroy
+    @saved_exhibition = SavedExhibition.find(params[:id])
+    @saved_exhibition.destroy
     render json: @saved_exhibition
   end
 
