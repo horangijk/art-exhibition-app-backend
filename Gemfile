@@ -9,6 +9,7 @@ gem 'rest-client'
 gem 'rb-readline', '~> 0.5.3'
 gem 'jwt', '~> 2.1'
 gem 'sqlite3', group: :development
+gem 'thin'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
