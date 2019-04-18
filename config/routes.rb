@@ -3,10 +3,10 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :exhibitions, only: [:index, :show]
-      resources :users, only: [:index, :create, :show]
+      resources :exhibitions
+      resources :users
       resources :saved_exhibitions
-      resources :impressions, only: [:index, :create, :show]
+      resources :impressions
 
       post '/login', to: 'auth#create'
       get '/profile', to: 'users#profile'
