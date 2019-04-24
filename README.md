@@ -10,6 +10,9 @@ Whether you're an art student out for inspiration or a tourist visiting for a fe
 - [Ruby](https://www.ruby-lang.org/en/)
 - [PostgreSQL](https://www.postgresql.org/)
 
+<b>Other</b>
+- Auth
+
 
 ## Installation Instructions
 1. Install gems
