@@ -8,7 +8,7 @@ Whether you're an art student out for inspiration or a tourist visiting for a fe
 <b>Built with</b>
 - [Ruby on Rails](https://rubyonrails.org/)
 - [Ruby](https://www.ruby-lang.org/en/)
-- PostgreSQL
+- [PostgreSQL](https://www.postgresql.org/)
 
 
 ## Installation Instructions
