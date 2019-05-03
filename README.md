@@ -29,3 +29,7 @@ rake db:seed
 ```
 rails s
 ```
+
+## Demo
+![](placard-gify.gif)
+https://www.youtube.com/watch?v=CrmjKfnGm8E
